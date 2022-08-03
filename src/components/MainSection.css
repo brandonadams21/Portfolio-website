@@ -22,7 +22,7 @@
 
 .text:hover{
   animation: rubberBand 1.2s;
-  color: whitesmoke;
+  color: rgb(81, 193, 241);
 }
 
 .hero-container > p {

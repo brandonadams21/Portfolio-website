@@ -1,0 +1,73 @@
+/* fireworks animation */
+
+/* .thanksmsg {
+    @keyframes firework {
+        0% { transform: translate(var(--x), var(--initialY)); width: var(--initialSize); opacity: 1; }
+        50% { width: 0.5vmin; opacity: 1; }
+        100% { width: var(--finalSize); opacity: 0; }
+      }
+    }
+      
+      /* @keyframes fireworkPseudo {
+        0% { transform: translate(-50%, -50%); width: var(--initialSize); opacity: 1; }
+        50% { width: 0.5vmin; opacity: 1; }
+        100% { width: var(--finalSize); opacity: 0; }
+      }
+       */
+      /* .firework,
+      .firework::before,
+      .firework::after
+      {
+        --initialSize: 0.5vmin;
+        --finalSize: 45vmin;
+        --particleSize: 0.2vmin;
+        --color1: yellow;
+        --color2: khaki;
+        --color3: white;
+        --color4: lime;
+        --color5: gold;
+        --color6: mediumseagreen;
+        --y: -30vmin;
+        --x: -50%;
+        --initialY: 60vmin;
+        content: "";
+        animation: firework 2s infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, var(--y));
+} */
+
+.submit {
+    position: relative;
+    list-style: none;
+    height: 80px;
+}
+  
+  button {
+    color: transparent;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, .5);
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: 1em;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  button::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+  }
+  
+  button:hover::before {
+    width: 100%;
+  }
+

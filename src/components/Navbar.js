@@ -28,8 +28,9 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            B-NASTY
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu} src="images/logo192.jpg">
+            BA
+            <image src="images/logo192.jpg" ></image>
             <i class="fa-duotone fa-brain-circuit"></i>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -62,18 +63,9 @@ function Navbar() {
                 Projects
               </Link>
             </li>
-
             <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>
