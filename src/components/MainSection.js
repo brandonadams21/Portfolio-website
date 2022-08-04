@@ -7,21 +7,20 @@ function HeroSection() {
   return (
     <div className='hero-container' >
       <h1>
-        <p style={{height: '90px'}}>
+        <p style={{height: '60px'}}>
         <span class='text'>H</span>
         <span class='text'>e</span>
         <span class='text'>y</span>
         <span class='text'>,</span>
         </p>
-        <p style={{height: '90px', position: 'relative'}}>
+        <p style={{height: '60px', paddingTop: '10px'}}>
         <span class='text'>I</span>
         <span class='text'>'</span>
         <span class='text'>m</span>
-        <span class='text' style={{marginLeft: '50px'}}>Brandon</span>
-        <span class='text'>,</span>
+        <span class='text' style={{marginLeft: '15px'}}>Brandon</span>
        </p>
        
-        <p style={{height: '90px'}}>
+        <p style={{height: '60px', paddingTop: '15px'}}>
         <span class='text'>F</span>
         <span class='text'>u</span>
         <span class='text'>l</span>
@@ -32,7 +31,7 @@ function HeroSection() {
         <span class='text'>c</span>
         <span class='text'>k</span>
         </p>
-        <p style={{height: '90px'}}>
+        <p style={{height: '60px', paddingTop: '15px'}}>
           <span class='text'>D</span>
           <span class='text'>e</span>
           <span class='text'>v</span>
