@@ -5,8 +5,9 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-body {background-color: #1d1d1d;
-min-width: 600px;
+body {
+  background-color: #242424;
+  color: white
 }
 
 .home,
@@ -29,7 +30,7 @@ min-width: 600px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: black;
+  color: #fff;
   font-size: 100px;
 }
 
@@ -38,15 +39,6 @@ min-width: 600px;
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
-  color: black;
-  font-size: 100px;
-}
-
-.sign-up {
-  background-image: url('/images/img-8.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: black;
+  color: #fff;
   font-size: 100px;
 }

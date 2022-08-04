@@ -8,6 +8,7 @@ import Blog from './components/pages/Blog';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Skills from './components/pages/Skills'
+import About from './components/About';
 
 function App() {
 
