@@ -57,6 +57,7 @@ function Skills() {
       <p  style={{color: 'white', width: '50%', height: '50%', fontSize: '25px', marginLeft: '40px', marginBottom: '50px'}}>
           Visit my <a style={{color: 'rgb(81, 193, 241)'}} href="https://www.linkedin.com/in/brandon-adams-93966b239">LinkedIn</a> and <a style={{color: 'rgb(81, 193, 241)'}} href="/contact">contact</a> me for more details!
       </p>
+      
     </>
   );
 }
