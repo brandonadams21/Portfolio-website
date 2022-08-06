@@ -3,6 +3,7 @@ import '../App.css';
 import { Button } from './Button';
 import './MainSection.css';
 
+
 function HeroSection() {
   return (
     <div className='hero-container' >
@@ -31,7 +32,7 @@ function HeroSection() {
         <span class='text'>c</span>
         <span class='text'>k</span>
         </p>
-        <p style={{height: '60px', paddingTop: '15px'}}>
+        <p style={{height: '200px', paddingTop: '15px'}}>
           <span class='text'>D</span>
           <span class='text'>e</span>
           <span class='text'>v</span>
@@ -43,10 +44,8 @@ function HeroSection() {
            <span class='text'>r</span>
         </p>
       </h1>
-      <p>Checkout this dope website</p>
-      <div className='hero-btns'>
-      </div>
-    </div>
+     
+</div>
   );
 }
 

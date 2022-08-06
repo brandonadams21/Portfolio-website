@@ -31,7 +31,6 @@ function Navbar() {
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu} src="images/logo192.jpg">
             BA
             <image src="images/logo192.jpg" ></image>
-            <i class="fa-duotone fa-brain-circuit"></i>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -69,6 +68,7 @@ function Navbar() {
           <div className='social-icons'>
           <a
               class='social-icon-link linkedin'
+              to='_blank'
               href="https://www.linkedin.com/in/brandon-adams-93966b239"
               aria-label='LinkedIn'
               style={{}}
@@ -77,6 +77,7 @@ function Navbar() {
             </a>
             <a
               class='social-icon-link linkedin'
+              to='_blank'
               href="https://github.com/brandonadams21"
               aria-label='LinkedIn'
               style={{marginLeft: '14px'}}
