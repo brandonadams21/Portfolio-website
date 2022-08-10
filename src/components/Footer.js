@@ -25,11 +25,10 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              BA
-              <i class='fab fa-typo3' />
+              <img src='BAfooter.png' style={{width: '40px'}}></img>
             </Link>
           </div>
-          <small class='website-rights'>BNASTY © 2022</small>
+          <small class='website-rights'>Brandon Adams 2022</small>
         </div>
       </section>
     </div>

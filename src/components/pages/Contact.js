@@ -6,13 +6,13 @@ import styled from 'styled-components'
 // const FORM_ENDPOINT = "/contact"; // TODO - fill on the later step
 
 const ContactContainer = styled('div')({
-    backgroundColor: '#1d1d1d',
+    backgroundColor: '#242424',
 })
 
 const Form = styled('form')({
-    maxWidth: '500px',
+  maxWidth: '500px',
 	padding: '10px 20px',
-	background: '#1d1d1d',
+	background: '#242424',
 	margin:' 10px auto',
 	padding: '20px',
 	borderRadius: '8px',
@@ -20,7 +20,7 @@ const Form = styled('form')({
 })
 
 const Input = styled('input')({
-    position: 'relative',
+  position: 'relative',
 	display: 'block',
 	padding: '19px 39px 18px 39px',
 	color: '#8d8d8d',
@@ -36,7 +36,7 @@ const Input = styled('input')({
 })
 
 const TextArea = styled('textarea')({
-    position: 'relative',
+  position: 'relative',
 	display: 'block',
 	padding: '19px 39px 18px 39px',
 	color: '#8d8d8d',
@@ -52,27 +52,42 @@ const TextArea = styled('textarea')({
 })
 
 const Contact = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
-  };
+  const [formData, setFormData] = useState({})
+  const [message, setMessage] = useState("")
 
-  if (submitted) {
-    return (
-      <>
-        <div className="thanksmsg" style={{color: 'white'}}>Thank you!</div>
-        <div className="beInTouch" style={{color: 'white'}}>I'll be in touch soon.</div>
-      </>
-    );
+  const handleInput = (e) => {
+    const copyFormData = {...formData}
+    copyFormData[e.target.name] = e.target.value
+    setFormData(copyFormData)
   }
+
+  const sendData = async(e) => {
+    e.preventDefault()
+    try {
+      const response = await fetch(
+        "appi3ey74toVdwQ6Q/tblJ72nrYScZ5BJS4/viwvuRn2cqkkMLYu1?blocks=hide",
+        {
+          method: 'post',
+          body: JSON.stringify([formData]),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
+      const json = await response.json()
+      console.log("Success", JSON.stringify(json))
+      setMessage("Success")
+    } catch (error) {
+      console.error("Error", error)
+      setMessage("Error")
+    }
+}
 
   return (
       <ContactContainer>
     <Form
     //   action={FORM_ENDPOINT}
-      onSubmit={handleSubmit}
+      onSubmit={sendData}
     //   method="POST"
     //   target="_blank"
     >
@@ -83,6 +98,7 @@ const Contact = () => {
           placeholder="Your name"
           name="name"
           required
+          onChange={handleInput}
         />
       </div>
       <div className="email" >
@@ -91,15 +107,16 @@ const Contact = () => {
           placeholder="Email"
           name="email"
           required
-          
+          onChange={handleInput}
         />
       </div>
       <div className="message">
-      <p style={{marginTop: '85px'}}>
+      <p>
         <TextArea
           placeholder="Your message"
           name="message"
           required
+          onChange={handleInput}
         />
         </p>
       </div>
