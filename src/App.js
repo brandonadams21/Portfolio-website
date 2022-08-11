@@ -22,6 +22,7 @@ function App() {
           <Route path='/projects' component={Projects} />
           <Route path = '/contact' component={Contact} />
           <Route path = '/skills' component={Skills} />
+          <Route path = '/about' component={About} />
         </Switch>
       </Router>
     </>

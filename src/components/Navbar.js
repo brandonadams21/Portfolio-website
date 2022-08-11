@@ -28,38 +28,37 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu} src="images/BA.png" style={{textAlign: 'center'}}>
-            {/* BA */}
-            <img className="logo" src="BA.png" style={{width: '40px', textAlign: 'center'}}></img>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu} src="images/BA.png">
+             <img className="logo" src="BA.png" style={{width: '40px'}}></img>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' data-text="Home" onClick={closeMobileMenu}>
-                Home
+              <Link to='/projects' className='nav-links' data-text="Projects" onClick={closeMobileMenu}>
+                Projects
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/blog'
+                to='/about'
                 className='nav-links'
-                data-text="Blog"
+                data-text="About"
                 onClick={closeMobileMenu}
               >
                 
-                Blog
+                About
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/projects'
+                to='/contact'
                 className='nav-links'
-                data-text="Projects"
+                data-text="Contact"
                 onClick={closeMobileMenu}
               >
-                Projects
+                Contact
               </Link>
             </li>
             <li>

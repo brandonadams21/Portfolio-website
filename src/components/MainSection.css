@@ -21,8 +21,9 @@
 }
 
 .text:hover{
-  animation: rubberBand 1.2s;
+  animation: rubberBand .9s;
   color: rgb(81, 193, 241);
+  opacity: 1;
 }
 
 .hero-container > p {
@@ -91,5 +92,10 @@
 100%{
     transform: scale3d(1.2, .8, 1)
 }
+}
+
+.contactLink{
+    color: white; 
+    text-Decoration: none;
 }
 
