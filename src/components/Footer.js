@@ -25,7 +25,9 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              <img src='BAfooter.png' style={{width: '40px'}}></img>
+
+              <img src='BA (1).png' style={{width: '40px'}}></img>
+
             </Link>
           </div>
           <small class='website-rights'>Brandon Adams 2022</small>

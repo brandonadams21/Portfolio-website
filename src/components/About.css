@@ -1,16 +1,26 @@
 .about {
     height: 100%;
     padding-top: 100px;
+    padding-bottom: 150px;
+    text-align: center;
 
     @media only screen and (max-width : 680px) {
         #homepageLeftImg {
        display:block;
         }
     }}
-  h1 {
+  .aboutHeader {
     text-align: center;
+    color: #51C1F1;
   }
 
+  .experienceHeader{
+    color: #51C1F1;
+  }
+
+  .educationHeader {
+    color: #51C1F1;
+  }
 
   .marquee {
   margin: 0 auto;

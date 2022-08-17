@@ -5,15 +5,17 @@ import HeroSection from '../MainSection';
 import Footer from '../Footer';
 import About from '../About';
 import Projects from './Projects';
+import Contact from './Contact';
 
 function Home() {
   return (
     <>
       <HeroSection />
       
-      <Projects />
+      {/* <Projects /> */}
       <About />
-      <Cards />
+      {/* <Cards /> */}
+      <Contact />
       <Footer />
     </>
   );

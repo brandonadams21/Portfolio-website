@@ -43,6 +43,7 @@ function HeroSection() {
            <span class='text'>e</span>
            <span class='text'>r</span>
         </p>
+        <a href='/contact' className="contactLink"> Contact me!</a>
       </h1>
      
 </div>
