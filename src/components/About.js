@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
-import styled from 'styled-components'
-import { SiTypescript, SiJavascript, SiHtml5, SiCss3, SiReact, SiGit, SiStyledcomponents, SiSass, SiPostgresql, SiHeroku } from 'react-icons/si';
-import { DiSass } from 'react-icons/di'
+// import styled from 'styled-components'
+// import { SiTypescript, SiJavascript, SiHtml5, SiCss3, SiReact, SiGit, SiStyledcomponents, SiSass, SiPostgresql, SiHeroku } from 'react-icons/si';
+// import { DiSass } from 'react-icons/di'
 
 function About() {
   return (
