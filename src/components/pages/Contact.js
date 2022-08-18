@@ -1,18 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import Airtable from "airtable";
-import styled from "styled-components";
-
-const ContactGrid = styled("div")({
-  display: "grid",
-  gridTemplateColumns: "1fr 2fr",
-});
-
-const DivCol = styled("div")({
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gridGap: "20px",
-});
 
 export default function Contact() {
   const [formData, setFormData] = useState({});
@@ -27,7 +15,7 @@ export default function Contact() {
   const sendData = async (e) => {
     e.preventDefault();
     try {
-      var base = new Airtable({ apiKey: "keyxSTqLDEz2AWFJI" }).base(
+      var base = new Airtable({ apiKey: `${process.env.REACT_APP_AIRTABLE_API_KEY}` }).base(
         "appi3ey74toVdwQ6Q"
       );
       base("Teams").create(
@@ -136,48 +124,5 @@ export default function Contact() {
         </div>
       </div>
     </div>
-    // <div className="App">
-    //   <div className="contactHeader">Let's get in touch!</div>
-    //     <form
-    //         className="input-form"
-    //         id="contact"
-    //         name="contact"
-    //         required
-    //         onSubmit={sendData}
-    //     >
-    //       <ContactGrid>
-    //       <DivCol style={{gridColumn: '1', gridRow: '1'}}>
-    //         <input
-    //             name="name"
-    //             type="text"
-    //             placeholder="Name"
-    //             required
-    //             onChange={handleInput}
-    //         />
-    //         </DivCol>
-    //         <DivCol style={{gridColumn: '2', gridRow: '1'}}>
-    //         <input
-    //             name="email"
-    //             type="email"
-    //             placeholder="Email"
-    //             required
-    //             onChange={handleInput}
-    //         />
-    //         </DivCol>
-    //         </ContactGrid>
-    //         <textarea
-    //             name="message"
-    //             placeholder="Message"
-    //             onChange={handleInput}
-    //         />
-    //        <button
-    //   type="submit"
-    //   className="msgBtn"
-    // >
-    //   Send a message
-    // </button>
-    //         {message}
-    //     </form>
-    // </div>
   );
 }
