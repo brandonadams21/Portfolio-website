@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from "react";
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
@@ -10,8 +9,7 @@ import Contact from './components/pages/Contact';
 import Skills from './components/pages/Skills'
 import About from './components/About';
 
-function App() {
-
+function App() {  
   return (
     <>
       <Router>
