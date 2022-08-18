@@ -12,7 +12,7 @@
 
 .text {
   color: #fff;
-  font-size: 70px;
+  /* font-size: 70px; */
   margin-top: -100px;
   animation-duration: 1s;
   animation-fill-mode: both;
