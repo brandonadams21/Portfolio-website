@@ -17,8 +17,8 @@ function About() {
       <p style={{paddingTop: '10px'}}>Joint Special Operations Command</p>
       <p style={{paddingTop: '10px'}}>United States Army Data Warfare</p>
       <h2 className="educationHeader" style={{paddingTop: '25px'}}>Education</h2>
-      <p style={{paddingTop: '10px'}}>Galvanize SDI</p>
-      <p style={{paddingTop: '10px'}}>Universty of Penn State 2022-2026</p>
+      <p style={{paddingTop: '10px'}}>Galvanize SDI 2022</p>
+      <p style={{paddingTop: '10px'}}>Universty of Penn State 2022-Present</p>
       <div>
         {/* <h2 style={{textAlign: 'center'}}>Skills</h2>
       <p class="marquee" >

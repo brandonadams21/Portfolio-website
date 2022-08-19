@@ -1,18 +1,18 @@
 .hero-container {
-  background: url('/images/programming.gif') center center/cover no-repeat;
+  background: url("/images/programming.gif") center center/cover no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 3840px rgba(0, 0, 0, 0.6);
   object-fit: contain;
 }
 
 .text {
   color: #fff;
-  /* font-size: 70px; */
+  text-decoration: none;
   margin-top: -100px;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -20,8 +20,8 @@
   display: inline-block;
 }
 
-.text:hover{
-  animation: rubberBand .9s;
+.text:hover {
+  animation: rubberBand 0.9s;
   color: rgb(81, 193, 241);
   opacity: 1;
 }
@@ -30,8 +30,8 @@
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .hero-btns {
@@ -46,7 +46,14 @@
   margin-left: 4px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 3840px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 1960px) {
   .hero-container > h1 {
     font-size: 70px;
     margin-top: -150px;
@@ -73,29 +80,39 @@
   }
 }
 
-@keyframes rubberBand{
-  0%{
-      transform: scale3d(1, 1, 1)
+@media screen and (max-width: 300px) {
+  .hero-container > h1 {
+    font-size: 45px;
+    margin-top: -150px;
+    letter-spacing: -3px;
   }
-  35%{
-      transform: scale3d(1.25, .75, 1)
-  }
-  45%{
-      transform: scale3d(.75, 1, 1)
-  }
-  60%{
-      transform: scale3d(1.2, .8, 1)
-  }
-  75%{
-    transform: scale3d(1.05, .95, 1)
-}
-100%{
-    transform: scale3d(1.2, .8, 1)
-}
 }
 
-.contactLink{
-    color: white; 
-    text-Decoration: none;
+@media screen and (max-width: 210px) {
+  .hero-container > h1 {
+    font-size: 35px;
+    margin-top: -150px;
+    letter-spacing: -3px;
+  }
 }
 
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  35% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  45% {
+    transform: scale3d(0.75, 1, 1);
+  }
+  60% {
+    transform: scale3d(1.2, 0.8, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
