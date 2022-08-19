@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './MainSection.css';
 
 
@@ -8,20 +7,20 @@ function HeroSection() {
   return (
     <div className='hero-container' >
       <h1>
-        <p style={{height: '60px'}}>
+        <p style={{height: '60px', paddingTop: '40px'}}>
         <span class='text'>H</span>
         <span class='text'>e</span>
         <span class='text'>y</span>
         <span class='text'>,</span>
         </p>
-        <p style={{height: '60px', paddingTop: '10px'}}>
+        <p style={{ paddingTop: '50px'}}>
         <span class='text'>I</span>
         <span class='text'>'</span>
         <span class='text'>m</span>
         <span class='text' style={{marginLeft: '15px'}}>Brandon</span>
        </p>
        
-        <p style={{height: '60px', paddingTop: '15px'}}>
+        <p style={{height: '60px', paddingTop: '20px'}}>
         <span class='text'>F</span>
         <span class='text'>u</span>
         <span class='text'>l</span>
@@ -43,7 +42,7 @@ function HeroSection() {
            <span class='text'>e</span>
            <span class='text'>r</span>
         </p>
-        <a href='/contact' className="contactLink"> Contact me!</a>
+        <a href='/contact' className="text"> Contact me!</a>
       </h1>
      
 </div>
