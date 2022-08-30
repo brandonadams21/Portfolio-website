@@ -67,16 +67,17 @@ function Navbar() {
           <div className='social-icons'>
           <a
               class='social-icon-link linkedin'
-              to='_blank'
+              target='_blank'
               href="https://www.linkedin.com/in/brandon-adams-93966b239"
               aria-label='LinkedIn'
               style={{}}
             >
+              
               <i class='fab fa-linkedin' />
             </a>
             <a
               class='social-icon-link linkedin'
-              to='_blank'
+              target='_blank'
               href="https://github.com/brandonadams21"
               aria-label='LinkedIn'
               style={{marginLeft: '14px'}}
