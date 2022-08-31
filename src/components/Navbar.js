@@ -28,7 +28,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu} src="images/BA.png">
-             <img className="logo" src="BA.png" style={{width: '40px'}}></img>
+             <img className="logo" src="BA.png" style={{width: '60px'}}></img>
 
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -64,7 +64,7 @@ function Navbar() {
             <li>
             </li>
           </ul>
-          <div className='social-icons'>
+          {/* <div className='social-icons'>
           <a
               class='social-icon-link linkedin'
               target='_blank'
@@ -84,7 +84,7 @@ function Navbar() {
             >
               <i class='fab fa-github' />
             </a>
-            </div>
+            </div> */}
         </div>
       </nav>
     </>
