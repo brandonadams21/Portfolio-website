@@ -44,8 +44,8 @@ function HeroSection() {
         </p>
         <a href='/contact' className="text"> Contact me!</a>
       </h1>
-     
 </div>
+
   );
 }
 
