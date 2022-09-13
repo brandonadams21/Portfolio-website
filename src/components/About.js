@@ -47,7 +47,6 @@ function About() {
         />
       </div>
       </p>
-      
     </div>
   );
 }
