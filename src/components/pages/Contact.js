@@ -15,9 +15,9 @@ export default function Contact() {
   const sendData = async (e) => {
     e.preventDefault();
     try {
-      var base = new Airtable({ apiKey: `${process.env.REACT_APP_AIRTABLE_API_KEY}` }).base(
-        "appi3ey74toVdwQ6Q"
-      );
+      var base = new Airtable({
+        apiKey: `${process.env.REACT_APP_AIRTABLE_API_KEY}`,
+      }).base("appi3ey74toVdwQ6Q");
       base("Teams").create(
         [
           {
@@ -68,17 +68,19 @@ export default function Contact() {
   }
 
   return (
-   
-
-        <div className="App">
-          <div className="contactHeader">Let's get in touch!</div>
-          <div class="contain">
-      <div class="wrapper">
-        <div class="contacts">
-          <ul>
-            <li>I am interested in job opportunites, freelance, and networking.</li>
-          </ul>
-        </div>
+    <div className="App">
+      <div id="contact" className="contactHeader">
+        Let's get in touch!
+      </div>
+      <div class="contain">
+        <div class="wrapper">
+          <div class="contacts">
+            <ul>
+              <li>
+                I am interested in job opportunites, freelance, and networking.
+              </li>
+            </ul>
+          </div>
           <form
             className="input-form"
             id="contact"
@@ -86,7 +88,6 @@ export default function Contact() {
             required
             onSubmit={sendData}
           >
-            
             <p>
               <input
                 name="name"

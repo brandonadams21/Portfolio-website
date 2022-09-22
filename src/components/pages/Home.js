@@ -7,15 +7,12 @@ import About from '../About';
 import Projects from './Projects';
 import Contact from './Contact';
 
-function Home() {
+function Home(id='top') {
   return (
     <>
-    
       <HeroSection />
-      
-      {/* <Projects /> */}
+      <Projects />
       <About />
-      {/* <Cards /> */}
       <Contact />
       <Footer />
     </>

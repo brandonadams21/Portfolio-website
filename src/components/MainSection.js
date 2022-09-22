@@ -43,8 +43,7 @@ function HeroSection() {
           <span class="text">e</span>
           <span class="text">r</span>
         </p>
-        <a href="/contact" className="text">
-          {" "}
+        <a href="#contact" className="text">
           Contact me!
         </a>
       </h1>
