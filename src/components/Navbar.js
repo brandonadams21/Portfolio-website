@@ -24,42 +24,44 @@ function Navbar() {
   window.addEventListener('resize', showButton);
 
   
+  window.scrollTo(0, 0);
+  
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' onClick={closeMobileMenu} src="images/BA.png">
+          <a href='#top' onClick={closeMobileMenu} src="images/BA.png">
              <img className="logo" src="BA.png" style={{width: '60px', paddingTop: '17px'}}></img>
-          </Link>
+          </a>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/projects' className='nav-links' data-text="Projects" onClick={closeMobileMenu}>
+              <a href='#projects' className='nav-links' data-text="Projects" onClick={closeMobileMenu}>
                 Projects
-              </Link>
+              </a>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/about'
+              <a
+                href="#aboutMe"
                 className='nav-links'
                 data-text="About"
                 onClick={closeMobileMenu}
               >
                 
                 About
-              </Link>
+              </a>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/contact'
+              <a
+                href="#contact"
                 className='nav-links'
                 data-text="Contact"
                 onClick={closeMobileMenu}
               >
                 Contact
-              </Link>
+              </a>
             </li>
             <li>
             </li>
