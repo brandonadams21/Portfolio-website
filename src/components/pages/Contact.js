@@ -71,7 +71,7 @@ export default function Contact() {
    
 
         <div className="App">
-          <div className="contactHeader">Let's get in touch!</div>
+          <div className="contactHeader" id="contact">Let's get in touch!</div>
           <div class="contain">
       <div class="wrapper">
         <div class="contacts">

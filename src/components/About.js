@@ -4,7 +4,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="aboutMe">
       <h1 className="aboutHeader">About me</h1>
       <p style={{ paddingTop: "10px" }}>
         Full stack developer. From Michigan,
