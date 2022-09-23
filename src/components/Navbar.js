@@ -23,6 +23,8 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
   
+  window.scrollTo(0, 0);
+  
   return (
     <>
       <nav className='navbar'>
