@@ -52,6 +52,7 @@ function HeroSection() {
           class="social-icon-link linkedin"
           target="_blank"
           href="https://www.linkedin.com/in/brandon-adams-93966b239"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
           style={{}}
         >
@@ -61,6 +62,7 @@ function HeroSection() {
           class="social-icon-link linkedin"
           target="_blank"
           href="https://github.com/brandonadams21"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
           style={{ marginLeft: "14px" }}
         >

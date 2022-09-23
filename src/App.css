@@ -12,8 +12,6 @@ body {
 }
 
 .home,
-.blog,
-.projects,
 .sign-up {
   display: flex;
   height: 90vh;
@@ -26,23 +24,6 @@ body {
  color: black;
 }
 
-.blog {
-  background-image: url('/images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.projects {
-  background-image: url('/images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
 @keyframes spinner {
   0% {
     transform: rotate(0deg);

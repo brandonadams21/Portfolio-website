@@ -1,5 +1,5 @@
 .cards {
-  padding: 4rem;
+
 }
 
 h1 {
@@ -45,9 +45,24 @@ h1 {
 
 .cards__item__pic-wrap {
   position: relative;
-  width: 100%;
+  width: 500px;
+  height: 300px;
   padding-top: 67%;
   overflow: hidden;
+}
+
+@media screen and (max-width: 744px) {
+  .cards__item__pic-wrap {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .cardText {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .fade-img {
@@ -56,7 +71,6 @@ h1 {
 }
 
 .cards__item__pic-wrap::after {
-  content: attr(data-category);
   position: absolute;
   bottom: 0;
   margin-left: 10px;

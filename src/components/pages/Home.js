@@ -4,14 +4,13 @@ import Cards from '../Cards';
 import HeroSection from '../MainSection';
 import Footer from '../Footer';
 import About from '../About';
-import Projects from './Projects';
 import Contact from './Contact';
 
 function Home(id='top') {
   return (
     <>
       <HeroSection />
-      <Projects />
+      <Cards />
       <About />
       <Contact />
       <Footer />

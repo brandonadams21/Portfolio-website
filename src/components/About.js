@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./About.css";
   
 
@@ -13,7 +13,7 @@ function About() {
       <h2 className="experienceHeader" style={{paddingTop: '50px'}}>Experience</h2>
       <p style={{paddingTop: '10px'}}>United States Army Infantry</p>
       <p style={{paddingTop: '10px'}}>Joint Special Operations Command</p>
-      <p style={{paddingTop: '10px'}}>United States Army Data Warfare</p>
+      <p style={{paddingTop: '10px'}}>101st ABN DIV Innovations Team</p>
       <h2 className="educationHeader" style={{paddingTop: '50px'}}>Education</h2>
       <p style={{paddingTop: '10px'}}>Galvanize SDI</p>
       <p style={{paddingTop: '10px'}}>Universty of Penn State 2022-Current</p>
