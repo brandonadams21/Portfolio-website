@@ -22,7 +22,6 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
-
   
   window.scrollTo(0, 0);
   
