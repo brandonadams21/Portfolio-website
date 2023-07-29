@@ -12,11 +12,11 @@ function About() {
         <h2 class="experienceHeader">Experience</h2>
         <p class="aboutParagraph">United States Army Infantry</p>
         <a class="aboutParagraph">July 2019 - April 2022</a>
-        <p class="aboutParagraph">Joint Special Operations Command</p>
+        <p class="aboutParagraph">
+          Fullstack Software Developer at Joint Special Operations Command
+        </p>
         <a>April 2022 - October 2022</a>
-        <p class="aboutParagraph">Freelancer</p>
-        <a>October 2022 - January 2023</a>
-        <p class="aboutParagraph">Internship at VKIS</p>
+        <p class="aboutParagraph">Fullstack Software Developer at VKIS</p>
         <a>January 2023 - Current</a>
       </div>
       <h2 className="educationHeader" style={{ paddingTop: "50px" }}>

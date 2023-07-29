@@ -32,6 +32,16 @@ function HeroSection() {
           <span class="text">c</span>
           <span class="text">k</span>
         </p>
+        <p style={{ height: "60px", paddingTop: "15px", cursor: "pointer" }}>
+          <span class="text">S</span>
+          <span class="text">o</span>
+          <span class="text">f</span>
+          <span class="text">t</span>
+          <span class="text">w</span>
+          <span class="text">a</span>
+          <span class="text">r</span>
+          <span class="text">e</span>
+        </p>
         <p style={{ height: "200px", paddingTop: "15px" }}>
           <span class="text">D</span>
           <span class="text">e</span>

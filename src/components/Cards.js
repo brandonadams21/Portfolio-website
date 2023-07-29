@@ -15,10 +15,10 @@ function Cards() {
     {
       id: 2,
       flipped: false,
-      title: "FreedomTAK",
+      title: "SAT by VKIS",
       description:
-        "As a Software Engineer, I had the privilege of working with Carter Jackson, a talented engineer at VK Integrated Systems, on the After Action Review Tool known as MARS. Leveraging my expertise in PHP, Laravel, CSS, and HTML, I collaborated with Carter to redesign and build this tool from the ground up. Together, we created an intuitive and efficient platform that enables users to easily review and analyze their performance, ultimately enhancing their decision-making and operational effectiveness.",
-      sourceLink: "https://freedomTak.com",
+        "Contributed to creating, designing, and developing SAT by VKIS. Fullstack SaaS application built in react, javascript, css, html, and nodeJS.",
+      sourceLink: "https://sat.vkintsys.com",
       previewImage: "images/freedomTak.png",
     },
   ]);
